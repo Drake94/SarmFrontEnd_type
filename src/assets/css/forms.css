@@ -1,0 +1,17 @@
+.showPwDForm{
+    position: relative;
+    border-left: hidden;
+    right: 0px;
+    left: 91.7%;
+    top: -35px;
+    padding: 16px;
+}
+
+
+.inputBox{
+    border-right: hidden;
+}
+
+.controlBox{
+margin: 0px 0px -4vh 0px;
+}

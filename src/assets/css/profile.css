@@ -1,0 +1,335 @@
+.btn-default {
+  background-color: #01AFEF ;
+  color: white;
+  width: 150px;
+  height: 40px;
+}
+.btn-default:hover {
+  background-color: orange ;
+  color: white;
+}
+.btn-default2 {
+  background-color: white;
+  color: black;
+  width: 17vw;
+  height: 50px;
+}
+.btn-default2:hover {
+  background-color: orange ;
+  color: white;
+}
+
+.menu_icon{
+  display: flex;
+  position: absolute;
+  left: 84%;
+  align-items: flex-end;
+  border: 5px !important;
+  justify-content: flex-end;
+}
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 61%;
+  height: 61%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+  font-family: fangsong;
+}
+
+.profile-usertitle-name {
+  color: black !important;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: blue;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+    
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+  border-left: 2px solid #5b9bd1;
+  margin-left: -2px;
+}
+.profile-stat {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f4f7;
+}
+.profile-stat-title {
+  color: #7f90a4;
+  font-size: 25px;
+  text-align: center;
+}
+.uppercase {
+  text-transform: uppercase!important;
+}
+
+.profile-stat-text {
+  color: #5b9bd1;
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+.profile-desc-title {
+  color: #7f90a4;
+  font-size: 17px;
+  font-weight: 600;
+}
+.profile-desc-text {
+  color: #7e8c9e;
+  font-size: 14px;
+}
+.profile-desc-link i {
+  width: 22px;
+  font-size: 19px;
+  color: #abb6c4;
+  margin-right: 5px;
+}  
+
+.profile-img-center {
+display: block;
+}
+
+.profile .list-group-item {
+border: transparent !important;
+color: purple;
+font-family: var(--default-font-semibold);
+font-weight: normal;
+}
+
+.profile .list-group {
+border-radius: 0;
+}
+
+.profile .list-group-item.active {
+z-index: 2;
+color: #04C2D7;
+font-family: 'poppins-regular';
+background-color: transparent !important;
+border-color: transparent !important;
+}
+
+.profile .list-group-item-action:hover, .list-group-item-action:focus {
+z-index: 1;
+color: #9657FF;
+font-family: 'poppins-regular';
+text-decoration: none;
+background-color: transparent !important;
+}
+
+
+.margin-top-20 {
+    margin-top: 20px!important;
+}
+[class*=" fa-"]:not(.fa-stack), [class*=" glyphicon-"], [class*=" icon-"], [class^=fa-]:not(.fa-stack), [class^=glyphicon-], [class^=icon-] {
+    display: inline-block;
+    line-height: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.Error-form {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: #000000;
+  border-radius: var(--border-radius);
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tittleSError{
+  font-size: 3.5vw;
+  color: #01AFEF;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-style: oblique;
+  text-transform: uppercase;
+  line-height: 1.5vw;
+}
+
+.Error-container2{
+  padding: 6vw 7vw 0vw 7vw;
+}
+
+.tittleSErrorBack{
+  font-size: 30px;
+  color: #00c4d9;;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tittleSErrorBack:hover {
+  color: #fff;
+}
+
+.img-error {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.head-tittle{
+  background: #454548
+  }
+
+.imgprofile {
+  border-radius: 100px;
+  width: 10vw;
+
+}.colorText  
+{ color: white; 
+}
+
+
+.loading-page_2 {
+  width: 100%;
+  text-align: -webkit-center;
+}
+.sidebar-container-text {
+  font-family: fangsong;
+  font-size: 17px;
+  color: white !important;
+}
+.sidebar-container{
+  max-width: max-content;
+  margin: 0px -20px 0px 5px;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 2rem 1.25rem 0rem 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+  font-family: serif;
+  /*height: 200px;*/
+}
+
+
+
+.Sidebartittle {
+  font-size: 25px !important;
+  font-family: fangsong !important;
+}
+.Sidebartittle:hover {
+  font-size: 25px !important;
+  font-family: fangsong !important;
+  color:orange !important;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 190px;
+
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+
+}
+.layouttext{
+  font-family: fangsong !important;
+  color: white !important;
+  font-size: 30px !important;
+  width: 30vw;
+}
+.containerLayout{
+  overflow-x: scroll; 
+  height: 53vh;
+}

@@ -1,0 +1,96 @@
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+body {
+  background: linear-gradient(45deg, darkcyan, transparent);
+  cursor: default;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+.login-form {
+  background: #d9d9d9;
+  padding: 10px 5%;
+  border-radius: var(--border-radius);
+}
+.register-form {
+  background: #d9d9d9;
+  padding: 10px 5%;
+  border-radius: var(--border-radius);
+}
+
+.register-form h1 {
+  font-size: 40px !important;
+  font-weight: 700!important;
+}
+@media (max-width: 768px) {
+.login-img-form{
+  width: 10% !important;
+  margin: 0px 30px 0px 0px;
+}}  
+.login-tittle-form{
+  width: 60% !important;
+    margin: 10px;;
+}
+
+.login-form h1 {
+  font-size: 40px !important;
+  font-weight: 700!important;
+}
+
+.reset-password-section {
+  background-color: #fff;
+  padding: 15px 5%;
+  border-radius: var(--border-radius);
+}
+
+@media (min-width: 768px) {
+.img_cen {
+    flex: 0 0 auto;
+    width: 75%;
+    text-align-last: center;
+}}
+@media (max-width: 768px) {
+  .img_cen {
+      flex: 0 0 auto;
+      width: 75%;
+      text-align: center;
+  }}
+@media (max-width: 768px) {
+  .img_icon {
+      flex: 0 0 auto;
+      width: 12vw;
+      text-align-last: center;
+  }}
+  @media (max-width: 768px) {
+    .img_form {
+      max-width: 13vw !important;
+    }}
+.btn-default {
+  background-color: #01AFEF ;
+  color: white;
+  width: 150px;
+  height: 40px;
+}
+.btn-default:hover {
+  background-color: orange ;
+  color: white;
+}
+.showPwDFormLogIn {
+  position: relative;
+    border-left: hidden;
+    right: 0px;
+    left: 88.7%;
+    top: -36px;
+    padding: 16px;
+}

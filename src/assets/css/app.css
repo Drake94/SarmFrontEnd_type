@@ -1,0 +1,445 @@
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 400px; /* Set the width of the sidebar */
+  position: sticky; /* Fixed Sidebar (stay in place on scroll) 
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #2e2e33; /* Black */
+  color: var(--sidenav-color);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: hidden;
+}
+
+.buttonCreate{
+  position: absolute !important;
+  z-index: 1;
+}
+
+.centerTable{
+  text-align-last: center !important;
+}
+
+.abbr{
+  font-family: fangsong !important;
+  font-size: 1.3rem !important;
+}
+
+.title{
+  color: black !important;
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  line-height: 1.125 !important;
+  font-family: fangsong !important;
+}
+
+.centerIcon{
+  text-align: center !important
+}
+
+.sidebartext{
+  font-family: fangsong !important;
+  color: white !important;
+  font-size: 30px !important;
+}
+
+.sidebartext:hover{
+  color:#01AFEF !important;
+
+}
+.sidebartext:focus{
+  color: orange !important;
+}
+.sidebartextDisabled{
+  font-family: fangsong !important;
+  color: white !important;
+  font-size: 30px !important;
+  padding: 0.25rem 0.5rem;
+}
+.sidebar-items {
+  height: calc(100% - 100px) !important;
+  padding-top: 10px;
+  padding-left: 13px;
+}
+/* Links de navegacion */
+.sidenav a {
+  padding: .25rem .5rem;
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--sidenav-color);
+  display: block;
+}
+.sidenav a:hover {
+  color: var(--sidenav-active-color);
+}
+.fixed-top {
+  position: relative !important;
+  top: 0;
+  right: 0;
+  left: 0px;
+  z-index: 0 !important;
+  height: 100px;
+  background: #2E2E33 !important;
+}
+@media screen and (max-width: 770px) {
+  .main {
+    margin-left: 0px; 
+  }
+
+  .fixed-top {
+    left: 0px;
+  }
+
+  .fixed-bottom-dropdown {
+    display: none !important;
+  }
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 0px;}
+  .sidenav a {font-size: 15px;}
+}
+.content-container {
+  margin-top: 0px;
+}
+.content-container-bef{
+  top: 0vh;
+  position: relative;
+}
+.sidenav p.bold, .sidenav span.bold, .sidenav a.bold {
+  font-family: var(--sidenav-active-font);
+  line-height: 22px !important;
+}
+/* sidebar  */
+.sidenav .btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .5rem;
+  font-weight: normal;
+  color: var(--sidenav-active-color);
+  background-color: transparent;
+  border: 0;
+  font-family: var(--sidenav-active-font);
+  letter-spacing: .03em;
+  font-size: 15px;
+}
+.sidenav .btn-toggle.collapsed {
+  font-family: var(--sidenav-normal-font);
+  color: var(--sidenav-color);
+}
+.sidenav .btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: ">" !important;
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+  color: var(--sidenav-color);
+}
+.sidenav .btn-toggle:hover,
+.sidenav .btn-toggle:focus {
+  font-family: var(--default-font-semibold);
+  background-color: #d2f4ea;
+}
+.sidenav .btn-toggle[aria-expanded="true"] {
+  color: var(--sidenav-active-color);
+}
+.sidenav .btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+.sidenav .btn-toggle-nav a {
+  display: inline-flex;
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+  text-decoration: none;
+}
+.sidenav .btn-toggle-nav a:hover,
+.sidenav .btn-toggle-nav a:focus {
+  background-color: #d2f4ea;
+}
+.sidenav .btn-toggle-nav a:hover, .sidenav .btn-toggle-nav a:focus {
+  color: var(--sidenav-active-color);
+  font-family: var(--sidenav-active-font);
+}
+.sidenav .active {
+  color: var(--sidenav-active-color);
+  font-family: var(--sidenav-active-font);
+}
+.scrollarea {
+  overflow-y: auto;
+}
+.sidenav .btn-toggle:hover, .sidenav .btn-toggle:focus {
+  color: var(--sidenav-active-color);
+  background-color: transparent !important;
+}
+.sidenav a:hover {
+  font-family: var(--sidenav-active-font);
+}
+.fixed-bottom-dropdown{
+  font-weight: normal !important;
+  position: absolute !important;
+  background-color: #2e2e33;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  border-top: 1px solid rgb(211,211,211);
+  padding: 10px 10px 10px;
+}
+
+.sidebar-items a {
+  font-family: var(--sidenav-normal-font);
+  color: var(--sidenav-color);
+  font-size: 20px;
+  letter-spacing: .03em;
+}
+.sidenav .fixed-bottom-dropdown a {
+  font-family: fangsong;
+  color: white;
+  font-size: 15px;
+  font-weight: normal !important;
+}
+.sidenav .fixed-bottom-dropdown .dropdown-item{
+  color: var(--theme-color) !important;
+}
+.sidenav .btn-toggle-nav a {
+  margin-left: .5rem !important;
+}
+
+.sidenav .dropdown-item.active, .dropdown-item:active {
+  background-color: transparent !important;
+}
+
+.sidenav .dropdown-item:hover, .dropdown-item:focus {
+  color: var(--theme-color);
+  background-color: transparent !important;
+  font-family: var(--sidenav-active-font) !important;
+}
+
+.tittleNav{
+  color: #01AFEF;
+  font-family: fangsong;
+  font-weight: bold;
+  font-size: 4vw;
+
+}
+
+
+/* modals */
+
+/*******************************
+* MODAL AS LEFT/RIGHT SIDEBAR
+* Add "left" or "right" in modal parent div, after class="modal".
+* Get free snippets on bootpen.com
+*******************************/
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 400px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+      -ms-transform: translate3d(0%, 0, 0);
+       -o-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content,
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.left .modal-body,
+.modal.right .modal-body {
+  padding: 15px 15px 80px;
+}
+
+/*Left*/
+.modal.left.fade .modal-dialog{
+  left: 0px;
+  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+          transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.in .modal-dialog{
+  left: 0;
+}
+      
+/*Right*/
+.modal.right.fade .modal-dialog {
+  right: 0px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+          transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+  right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom-color: #EEEEEE;
+  background-color: var(--theme-color);
+  color: var(--white);
+  border-radius: 0;
+}
+
+.modal-header .btn-close {
+  background: transparent !important;
+  color: var(--secondary-color);
+  font-size: 22px;
+}
+
+/* page loading canvas */
+
+.loading-page {
+  width: 100%;
+  height: 100vh;
+  background-color: #2e2e33;
+}
+.loading-page .center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+}
+
+/* table */
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #fff;
+  width: 100%;
+  max-width: 100%;
+  border-top: .2rem solid #d8dbe0;
+  padding: .5rem;
+  border-radius: .3rem;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  padding: .8rem;
+  line-height: 1.42857143;
+}
+
+table thead th {
+  font-size: 0.9rem;
+  font-family: var(--default-font-semibold);
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.table>thead>tr>th {
+  border-bottom: .12rem solid #f2f2f2;
+  border-bottom-color: #f2f2f2 !important;
+}
+
+table tbody td {
+  font-size: .9rem;
+}
+
+table tbody tr:focus-within, table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th {
+  border-top: .1rem solid #ebedef;
+}
+
+.table-action-dropdown .dropdown-toggle {
+  background: transparent;
+  color: var(--theme-color);
+  border: none;
+  border-radius: 12px;
+}
+
+.table-action-dropdown .dropdown-toggle:hover, 
+.table-action-dropdown .dropdown-toggle:focus {
+  background: var(--theme-color);
+  color: #01AAE8;
+  border-radius: 12px;
+}
+
+.table-action-dropdown .dropdown-toggle::after {
+  content:none;
+}
+
+.table-action-dropdown .dropdown-item {
+  color: var(--theme-color);
+}
+
+.table-action-dropdown .dropdown-item:hover, 
+.table-action-dropdown .dropdown-item:focus {
+  background: transparent;
+  font-family: var(--default-font-semibold);
+}
+
+.table-bottom-center-pagination {
+  text-align: center !important;
+}
+
+.table-bottom-center-pagination .pagination{
+  display: inline-flex !important;
+}
+
+.table-bottom-center-pagination .pagination .page-link{
+  color: var(--theme-color);
+}
+
+.table-bottom-center-pagination .pagination .page-link:hover,
+.table-bottom-center-pagination .pagination .page-link:focus{
+  color: var(--secondary-color);
+  background: var(--theme-color);
+}
+
+.table-container {
+  margin-top: 10px !important;
+  display: inline-block;
+}
+
+.low-height-btn {
+  line-height: 0.9 !important;
+  display: inline;
+}
+
+.highlighted-text {
+  color: var(--secondary-color) !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.modal-footer {
+  padding: 0.4rem .75rem !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  background: var(--light-grey);
+}
+
+.modal.left .modal-body, .modal.right .modal-body {
+  padding: 15px 15px 15px;
+}
+
+.boxTable{
+  margin-bottom: 0px !important;
+  overflow-y: scroll;
+  max-height: 60vh;
+}
+
+
+.delete {
+  display: none !important;
+}
